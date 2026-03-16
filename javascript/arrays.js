@@ -154,3 +154,24 @@ console.log(``)
 console.log(`9)lastIndexOf(returns the last occurence of the element -->letter.lastIndexOf() )`)
 var lastindex=letter.lastIndexOf("H")
 console.log(`last index of H:${lastindex}`)
+console.log(``)
+console.log(`10)sort :sorting elements in the ascending or descending order`);
+var ele=[5,55,9,10]
+console.log(`normal sort() folows the dictionary type = ${ele.sort()}`)
+console.log(`for ascending order :.sort((a,b)=>a-b)`)
+console.log(`original array:${ele}`)
+console.log(``)
+console.log(`sorted array in ascending: ${ele.sort((a,b)=>a-b)}`)
+console.log(``)
+console.log(`for descending order:.sort((a,b)=>b-a)`)
+console.log(``)
+console.log(`sorted array in descending:${ele.sort((a,b)=>b-a)}`)
+console.log(``)
+console.log(`11)reverse -> .sort().reverser()`)
+console.log(` with reverse ${ele.sort().reverse()}`)
+console.log(`12)join -to convert an array into the string`)
+var jn=ele.join()
+console.log(`${jn}`)
+
+
+
