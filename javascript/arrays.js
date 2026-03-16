@@ -172,6 +172,12 @@ console.log(` with reverse ${ele.sort().reverse()}`)
 console.log(`12)join -to convert an array into the string`)
 var jn=ele.join()
 console.log(`${jn}`)
-
-
+console.log(``)
+console.log(`13)concat ->concactination is the adding two different arrays into one `)
+var a1=["A","B","C","D"]
+var a2=["Y","Z","X","W"]
+console.log(`a1 :${a1}`)
+console.log(`a2 :${a2}`)
+var con=a1.concat(a2)
+console.log(`${con}`)
 
