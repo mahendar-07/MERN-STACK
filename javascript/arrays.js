@@ -180,4 +180,18 @@ console.log(`a1 :${a1}`)
 console.log(`a2 :${a2}`)
 var con=a1.concat(a2)
 console.log(`${con}`)
-
+console.log(``)
+console.log(`14)forEach -> used to iterate all the values of an array by applying function to every element`)
+console.log(``)
+var foreah=[1,2,3,4,5,6,7];
+console.log(`original array: ${foreah}`);
+console.log(``)
+console.log(`just traversing it with using foreach and function way`);
+foreah.forEach(add);
+function add(a){
+    console.log(a+1);
+}
+console.log(``)
+console.log(`does original array got changed? let's check ${foreah}`)
+console.log(``)
+console.log(`15)Map :`)
