@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt-color">Hey getElementById</h1>
+    
+    <button onclick="changeit()">click here</button>
+    <p>click the below button to change the background </p>
+    <button onclick="changebg()"> clickbg</button>
+    <script>
+        function changeit(){
+            document.getElementById("txt-color").style.color="blue";
+        }
+        function changebg(){
+            document.getElementById("txt-color").style.backgroundColor="pink";
+        }
+    </script>
+
+
+</body>
+</html>
