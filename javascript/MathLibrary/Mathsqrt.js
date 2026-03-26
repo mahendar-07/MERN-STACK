@@ -1,0 +1,12 @@
+console.log(`Math.sqrt()`);
+console.log(`Math.sqrt() gives the squareroot of a number`)
+console.log(`Math.sqrt(1)   is ${Math.sqrt(1)}`)
+console.log(`Math.sqrt(4)   is ${Math.sqrt(4)}`)
+console.log(`Math.sqrt(9)   is ${Math.sqrt(9)}`)
+console.log(`Math.sqrt(16)  is ${Math.sqrt(16)}`)
+console.log(`Math.sqrt(25)  is ${Math.sqrt(25)}`)
+console.log(`Math.sqrt(36)  is ${Math.sqrt(36)}`)
+console.log(`Math.sqrt(49)  is ${Math.sqrt(49)}`)
+console.log(`Math.sqrt(64)  is ${Math.sqrt(64)}`)
+console.log(`Math.sqrt(81)  is ${Math.sqrt(81)}`)
+console.log(`Math.sqrt(100) is ${Math.sqrt(100)}`)
