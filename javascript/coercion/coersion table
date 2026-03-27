@@ -1,0 +1,30 @@
+| Expression          | Coercion Steps              | Result              | Type    |
+| ------------------- | --------------------------- | ------------------- | ------- |
+| `5 + "5"`           | Number → String             | `"55"`              | string  |
+| `"5" - 2`           | String → Number             | `3`                 | number  |
+| `"5" * "2"`         | String → Number             | `10`                | number  |
+| `true + 1`          | Boolean → Number (1)        | `2`                 | number  |
+| `false + 1`         | Boolean → Number (0)        | `1`                 | number  |
+| `1 + null`          | null → Number (0)           | `1`                 | number  |
+| `1 + undefined`     | undefined → NaN             | `NaN`               | number  |
+| `null == undefined` | Special rule                | `true`              | boolean |
+| `"0" == false`      | Both → Number (0)           | `true`              | boolean |
+| `0 == false`        | Boolean → Number            | `true`              | boolean |
+| `[] + []`           | Array → String (`""`)       | `""`                | string  |
+| `[] + {}`           | `"" + "[object Object]"`    | `"[object Object]"` | string  |
+| `({} + [])`         | Object → String             | `"[object Object]"` | string  |
+| `{ } + []`          | Block + `+[]` → Number      | `0`                 | number  |
+| `[] == false`       | `[] → "" → 0`, `false → 0`  | `true`              | boolean |
+| `["5"] == 5`        | Array → String → Number     | `true`              | boolean |
+| `[] == ![]`         | `![] → false → 0`, `[] → 0` | `true`              | boolean |
+| `NaN == NaN`        | No coercion match           | `false`             | boolean |
+| `typeof NaN`        | JS quirk                    | `"number"`          | string  |
+| `null == 0`         | Special rule                | `false`             | boolean |
+| `null >= 0`         | null → Number (0)           | `true`              | boolean |
+
+💡 Key Rules to Remember:
+
++ operator → If either operand is a string, concatenation happens; otherwise, numeric addition.
+Other arithmetic operators (-, *, /, %) → Convert operands to numbers.
+Loose equality (==) → Allows type coercion; strict equality (===) does not.
+Falsy values: false, 0, "", null, undefined, NaN → all become false in Boolean context.
