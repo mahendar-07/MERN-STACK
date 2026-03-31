@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="cls">Header</h1>
+    <p class="cls"> Train before the Battle</p>
+    <h2 class="cls" >To conquer</h2>
+    <button onclick="change()">clickhere</button>
+    <script>
+        function change(){
+            var arr=document.getElementsByClassName("cls")
+            // arr.style.color="pink"
+            // for(let i=0;i<3;i++){
+            //     arr[i].style.color="pink"
+
+            // }
+            // arr.for((e,i) =>{ arr[i].style.color="pink"});
+            // arr[0].style.color="pink"
+        for(let a of arr){
+            a.style.color="red"
+        }
+        }
+    </script>
+</body>
+</html>

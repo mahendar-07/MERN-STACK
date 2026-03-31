@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #network{
+            display: none;
+            padding:5px;
+            text-align:center;
+        }
+    </style> 
+</head>
+<body onoffline="displaymsg()" ononline="displaymsg2()">
+    <h1 id="network"></h1>
+    <h1> network detection using the ononline and onoffline</h1>
+    <script>
+        
+        function displaymsg(){
+            document.getElementById("network").innerHTML="Network lost - offline"
+            // document.getElementById("network").style.display.block
+             document.getElementById("network").style.backgroundColor="red"
+            document.getElementById("network").style.color="white"
+            document.getElementById("network").style.display="block"
+        }
+        function displaymsg2(){
+            document.getElementById("network").innerHTML="network connected-online"
+            document.getElementById("network").style.backgroundColor="green"
+            document.getElementById("network").style.color="white"
+            document.getElementById("network").style.display="block"
+            setTimeout(()=>{
+                callReset();
+            },3000)
+        }
+        function callReset(){
+            document.getElementById("network").style.display="none"
+        }
+    </script>
+</body>
+</html>
