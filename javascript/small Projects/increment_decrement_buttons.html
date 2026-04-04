@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment_decrement_button</title>
+    <style>
+        .main{
+            
+            border-radius: 50px;
+            border:5px solid pink;
+            height:400px;
+            width:100%;
+            display: flex;
+            gap:1px;
+            padding: 20px;
+            justify-content: center;
+            justify-content: space-between;
+        }
+        button{
+            height: 200px;
+            width: 200px;
+            font-size: 80px;
+        }
+        h1{
+            font-size:80px ;
+        }
+        .reset{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <button class="btn" onclick="decrement()">- </button>
+        </div>
+         <h1 id="element"></h1>
+        <div>
+            <button class="btn" onclick="increment()">+ </button>
+        </div>
+     <div>
+            <button class="reset"  onclick="reset()">reset</button>
+        </div>   
+    </div>
+<script>
+    var count=0;
+    document.getElementById("element").innerHTML=count;
+    function increment(){
+        count++;
+        document.getElementById("element").innerHTML=count;
+        // animate();
+    }
+    function decrement(){
+        count--;    
+        document.getElementById("element").innerHTML=count;
+    }
+    function reset(){
+        count=0;
+        document.getElementById("element").innerHTML=count;
+        animate();
+    }
+    function animate() {
+    const el = document.getElementById("element");
+    el.style.transform = "scale(1.3)";
+    setTimeout(() => {
+        el.style.transform = "scale(1)";
+    }, 150);
+}
+</script>
+
+
+</body>
+</html>
