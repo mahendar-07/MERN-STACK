@@ -1,0 +1,29 @@
+<p>login works</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-5 border border-2" id="f">
+            <form class="mt-5" (ngSubmit)="checklogin()">
+                <div class="form-group">
+                    <label for="" class="form-label fs-4">username:</label>
+                    <input type="text" class="form-control" name="uname" placeholder="username" [(ngModel)]="username" > 
+                    <label>{{username}}</label>
+                </div>
+                <div class="form-group pt-4">
+                    <label for="" class="form-label fs-4">password:</label>
+                    <input type="password" class="form-control" name="pwd" placeholder="password" [(ngModel)]="password">
+                </div>
+                <div class="mt-4">
+                    <div class="row">
+                        <button type="submit" class="btn" style="background-color: orange;">Login</button>  
+                        <!-- <button type="reset" class="btn btn-danger">Cancel</button> -->
+                    </div>
+                    <hr>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>

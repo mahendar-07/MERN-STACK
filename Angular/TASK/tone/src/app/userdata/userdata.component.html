@@ -1,0 +1,24 @@
+<table border="1" cellpadding="10">
+    <tr>
+        <th style="border: 1px solid black;">serial No</th>
+        <th style="border: 1px solid black;">Name</th>
+        <th style="border: 1px solid black;" >username</th>
+        <th style="border: 1px solid black;">password</th>
+        <th style="border: 1px solid black;">phone</th>
+        <th style="border: 1px solid black;">address</th>
+        <th style="border: 1px solid black;">zipcode</th>
+        <th style="border: 1px solid black;">email</th>
+    </tr>
+    <tr *ngFor="let u of udata" style="border: 1px solid black;">
+        <td style="border: 1px solid black;">{{u.id}}</td>
+        <td style="border: 1px solid black;"> {{u.name.firstname}} {{u.name.lastname}} </td>
+        <td style="border: 1px solid black;"> {{u.username}} </td>
+        <td style="border: 1px solid black;"> {{u.password}} </td>
+        <td style="border: 1px solid black;"> {{u.phone}} </td>
+      <td style="border: 1px solid black;"> 
+        Street: {{u.address.street}} <br>
+        City: {{u.address.city}} </td>
+      <td style="border: 1px solid black;"> {{u.address.zipcode}} </td>
+      <td style="border: 1px solid black;"> {{u.email}} </td>
+    </tr>
+</table> 
